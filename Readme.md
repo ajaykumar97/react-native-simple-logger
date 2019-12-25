@@ -118,6 +118,25 @@ Usage:
 
     This method is made to log the API error for the ```"axios"```. The error details would contain the error status code, url, error response etc.
 
+Let ``api request`` be:
+
+
+```
+axios({
+            url: 'https://jsonplaceholder.typicode.com/post',
+            method: 'post',
+            data: {
+                title: 'foo',
+                body: 'bar',
+            },
+        })
+            .then((response) => logger.data('add post response is: ', response.data))
+            .catch((error) => logger.apiError('add post error:', error));
+```
+
+Here I have passed the incorrect url ``https://jsonplaceholder.typicode.com/post``, which should be ``https://jsonplaceholder.typicode.com/posts``.
+
+The error will be something like as shown in the 3rd column image below:
 
 | logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
 | ---------------------------------- | ----------------------------------- | ----------------------------------------- |
