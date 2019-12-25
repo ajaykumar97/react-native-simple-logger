@@ -74,11 +74,10 @@ const data = {
     The default value for ```expandJson``` is ```false```
 
 
-| logger.log('I am a log');                                                                                               | logger.log(data);                                                                                           | logger.log('User data is: ', data, true);                                                                                                |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 
-
-|  ![](assets/logger.log(1).png)    |   ![](assets/logger.log(2).png)            |     ![](assets/logger.log(2).png) |
+| logger.log('I am a log')      | logger.log(null, data, true)   | logger.log('User data is: ', data, true) |
+| ----------------------------- | ------------------------------ | ---------------------------------------- |
+| ![](assets/logger.log(1).png) | ![](assets/logger.log(2).png)  | ![](assets/logger.log(3).png)            |
 
 
 ## 2. logger.error
@@ -95,6 +94,11 @@ Usage:
     **text:** The output to be shown
 
     If only ```text``` is provided, the default heading would be ```"ERROR"```
+
+
+| logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  |
+| ------------------------------------------   | ------------------------------ |
+| ![](assets/logger.error(1).png)              | ![](assets/logger.error(2).png)  |
 
 
 ## 3. logger.apiError
@@ -115,6 +119,10 @@ Usage:
     This method is made to log the API error for the ```"axios"```. The error details would contain the error status code, url, error response etc.
 
 
+| logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
+| ---------------------------------- | ----------------------------------- | ----------------------------------------- |
+| ![](assets/logger.apiError(1).png) | ![](assets/logger.apiError(2).png)  | ![](assets/logger.apiError(3).png         |
+
 ## 4. logger.data
 
 Usage:
@@ -131,4 +139,7 @@ Usage:
 
     If only ```"text"``` is provided, the default heading would be "DATA"
     The default value for ```noJsonExpand``` is ```false``` i.e. the output would be expanded
-    
+
+| logger.data('User data is:', data) | logger.data('User data is:', data, true) |   logger.data(data)            |
+| ---------------------------------- | ----------------------------------------- | ------------------------------ |
+| ![](assets/logger.data(1).png)     | ![](assets/logger.data(2).png)            | ![](assets/logger.data(3).png) |
