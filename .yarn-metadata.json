@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "name": "react-native-simple-logger",
+    "version": "0.0.1",
+    "description": "This is a simple logger for React-Native to log things more clearly using colored logs",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ajaykumar97/react-native-simple-logger.git"
+    },
+    "keywords": [
+      "react-native-simple-logger",
+      "react-native",
+      "logger",
+      "simple-logger",
+      "simple"
+    ],
+    "author": {
+      "name": "Ajay Kumar"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/ajaykumar97/react-native-simple-logger/issues"
+    },
+    "homepage": "https://github.com/ajaykumar97/react-native-simple-logger#readme",
+    "_registry": "npm",
+    "_loc": "/Users/apple/Library/Caches/Yarn/v4/npm-react-native-simple-logger-0.0.1-e46ac12e-4ddb-4a1b-bdac-028a384f9737-1577190593370/node_modules/react-native-simple-logger/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "copy",
+    "registry": "npm",
+    "hash": "e3078465-c932-48c2-ba6a-688a75acd47e-1577190750925",
+    "reference": "/usr/local/lib/node_modules/react-native-simple-logger"
+  },
+  "registry": "npm",
+  "hash": "e3078465-c932-48c2-ba6a-688a75acd47e-1577190750925"
+}

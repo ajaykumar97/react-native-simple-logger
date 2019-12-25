@@ -1,0 +1,26 @@
+{
+  "name": "react-native-simple-logger",
+  "version": "0.0.2",
+  "description": "This is a simple logger for React-Native to log things more clearly using colored logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaykumar97/react-native-simple-logger.git"
+  },
+  "keywords": [
+    "react-native-simple-logger",
+    "react-native",
+    "logger",
+    "simple-logger",
+    "simple"
+  ],
+  "author": "Ajay Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajaykumar97/react-native-simple-logger/issues"
+  },
+  "homepage": "https://github.com/ajaykumar97/react-native-simple-logger#readme"
+}
