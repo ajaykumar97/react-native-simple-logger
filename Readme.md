@@ -121,7 +121,7 @@ Usage:
 
 | logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
 | ---------------------------------- | ----------------------------------- | ----------------------------------------- |
-| ![](assets/logger.apiError(1).png) | ![](assets/logger.apiError(2).png)  | ![](assets/logger.apiError(3).png         |
+| ![](assets/logger.apiError(1).png) | ![](assets/logger.apiError(2).png)  | ![](assets/logger.apiError(3).png)        |
 
 ## 4. logger.data
 
