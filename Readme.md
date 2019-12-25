@@ -73,8 +73,11 @@ const data = {
 
     The default value for ```expandJson``` is ```false```
 
-:-------------------------:|:-------------------------:
-![](assets/logger.log(1).png) ```logger.log('I am a log');``` | ![](assets/logger.log(2).png) ```logger.log(data);```
+```logger.log('I am a log');```
+![](assets/logger.log(1).png)
+
+```logger.log(data);```
+![](assets/logger.log(2).png) 
 
 ## 2. logger.error
 
