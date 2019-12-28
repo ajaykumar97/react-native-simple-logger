@@ -1,5 +1,5 @@
-![](https://img.shields.io/npm/v/react-native-simple-logger.svg?style=flat)
-![](https://img.shields.io/npm/dt/react-native-simple-logger.svg)
+[![](https://img.shields.io/npm/v/react-native-simple-logger.svg?style=flat)](https://www.npmjs.com/package/react-native-simple-logger)
+[![](https://img.shields.io/npm/dt/react-native-simple-logger.svg)](https://www.npmjs.com/package/react-native-simple-logger)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 # react-native-simple-logger
