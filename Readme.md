@@ -7,7 +7,7 @@
 
 A simple React-Native logger to log outputs to make debugging easy in ``Chrome Debugger``.
 
-It automatically disables the ``console.log`` if it is not the production environment.
+It automatically disables the ``console.log`` if it is not in the production environment.
 
 
 ## Installation
@@ -77,7 +77,7 @@ const data = {
 
 | logger.log('I am a log')      | logger.log(null, data, true)   | logger.log('User data is: ', data, true) |
 | ----------------------------- | ------------------------------ | ---------------------------------------- |
-| ![](assets/logger.log(1).png) | ![](assets/logger.log(2).png)  | ![](assets/logger.log(3).png)            |
+| ![](https://imgur.com/2Y3r6OX.png) | ![](https://imgur.com/aoq9EiH.png)  | ![](https://imgur.com/z6QHPn8.png)            |
 
 
 ## 2. logger.error
@@ -98,7 +98,7 @@ Usage:
 
 | logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  |
 | ------------------------------------------   | ------------------------------ |
-| ![](assets/logger.error(1).png)              | ![](assets/logger.error(2).png)  |
+| ![](https://imgur.com/dkqtWIL.png)              | ![](https://imgur.com/yeBHNtd.png)  |
 
 
 ## 3. logger.apiError
@@ -123,15 +123,15 @@ Let ``api request`` be:
 
 ```
 axios({
-            url: 'https://jsonplaceholder.typicode.com/post',
-            method: 'post',
-            data: {
-                title: 'foo',
-                body: 'bar',
-            },
-        })
-            .then((response) => logger.data('add post response is: ', response.data))
-            .catch((error) => logger.apiError('add post error:', error));
+    url: 'https://jsonplaceholder.typicode.com/post',
+    method: 'post',
+    data: {
+        title: 'foo',
+        body: 'bar',
+    },
+})
+    .then((response) => logger.data('add post response is: ', response.data))
+    .catch((error) => logger.apiError('add post error:', error));
 ```
 
 Here I have passed the incorrect url ``https://jsonplaceholder.typicode.com/post``, which should be ``https://jsonplaceholder.typicode.com/posts``.
@@ -140,7 +140,7 @@ The error will be something like as shown in the 3rd column image below:
 
 | logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
 | ---------------------------------- | ----------------------------------- | ----------------------------------------- |
-| ![](assets/logger.apiError(1).png) | ![](assets/logger.apiError(2).png)  | ![](assets/logger.apiError(3).png)        |
+| ![](https://imgur.com/WC2Rbo1.png) | ![](https://imgur.com/FQYaoc9.png)  | ![](https://imgur.com/QaED7BI.png)        |
 
 ## 4. logger.data
 
@@ -161,4 +161,4 @@ Usage:
 
 | logger.data('User data is:', data) | logger.data('User data is:', data, true) |   logger.data(data)            |
 | ---------------------------------- | ----------------------------------------- | ------------------------------ |
-| ![](assets/logger.data(1).png)     | ![](assets/logger.data(2).png)            | ![](assets/logger.data(3).png) |
+| ![](https://imgur.com/m3deCSn.png)     | ![](https://imgur.com/vmoXo1O.png)            | ![](https://imgur.com/tEzMrrN.png) |
