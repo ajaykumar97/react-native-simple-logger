@@ -61,8 +61,10 @@ const data = {
 - **logger.log(header, text, expandJson)**
 
     **header:** The header to be shown as heading of the output
-    text: The output to be shown
-    expandJson: If the putput to be shown is ```JSON object```, the ```JSON object``` would be expanded by using ```JSON.stringify().replace()``` method
+
+    **text:** The output to be shown
+
+    **expandJson:** If the output to be shown is ```JSON object```, the ```JSON object``` would be expanded by using ```JSON.stringify().replace()``` method
 
 
 - **logger.log(text)**
@@ -150,7 +152,8 @@ Usage:
     **header:** The header to be shown as heading of the output
     
     **text:** The output to be shown
-    noJsonExpand: A boolean indicating wether to expand the JSON output into more clearer view
+    
+    **noJsonExpand:** A boolean indicating wether to expand the JSON output into more clearer view
     
 - **logger.data(text)**
 
