@@ -1,5 +1,5 @@
 const logger = {
-    error: (header, err) => {
+    error: (header, err, expandJson) => {
         if (!__DEV__) { //to disable log in production mode
             return;
         }
@@ -13,7 +13,14 @@ const logger = {
 
         try {
             if (!err.stack) {
-                console.log(`%c ${header} `, 'background:red;color:#FFFFFF', err);
+                if (expandJson) {
+                    console.log(
+                        `%c ${header} `, 'background:red;color:#FFFFFF',
+                        JSON.stringify(err, null, 4).replace(/'/g, '')
+                    );
+                } else {
+                    console.log(`%c ${header} `, 'background:red;color:#FFFFFF', err);
+                }
             } else {
                 console.log(`%c ${header} `, 'background:red;color:#FFFFFF', err.stack);
             }
@@ -53,11 +60,6 @@ const logger = {
             if (error.response) {
                 // The request was made and the server responded with a status code
                 // that falls out of the range of 2xx
-
-                /* console.log(error.response.data);
-                console.log(error.response.status);
-                console.log(error.response.headers); */
-
                 if (error.response.status) {
                     console.log(
                         '%c STATUS CODE ', 'background:orange;color:#FFFFFF',
