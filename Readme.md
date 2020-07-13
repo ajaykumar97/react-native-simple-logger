@@ -77,7 +77,7 @@ const data = {
 
 | logger.log('I am a log')      | logger.log(null, data, true)   | logger.log('User data is: ', data, true) |
 | ----------------------------- | ------------------------------ | ---------------------------------------- |
-| ![](https://imgur.com/7TndXRG) | ![](https://imgur.com/qWcnjxT)  | ![](https://imgur.com/fPhsIT1)            |
+| ![](https://imgur.com/7TndXRG) | ![](https://imgur.com/qWcnjxT)  | ![](https://imgur.com/fPhsIT1)         |
 
 
 ## 2. logger.error
@@ -97,10 +97,17 @@ Usage:
 
     If only ```text``` is provided, the default heading would be ```"ERROR"```
 
+Suppose we have a `data` constant:
+
+```
+const data = {
+  name: 'I am name'
+};
+```
 
 | logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  | logger.error(data, null, true)  |
 | ------------------------------------------   | ------------------------------ | ------------------------------ |
-| ![](https://imgur.com/NmqUr8N)               | ![](https://imgur.com/W38WqCJ) | ![](https://imgur.com/j9R6naU) |
+| ![](https://imgur.com/NmqUr8N)               | ![](https://imgur.com/W38WqCJ) | ![](https://www.dropbox.com/s/4ynabtqn0mk7mpm/Screenshot%20at%20Jul%2013%2023-48-28.png?dl=0) |
 
 
 ## 3. logger.apiError
