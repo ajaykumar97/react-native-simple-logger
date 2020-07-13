@@ -33,13 +33,11 @@ Simply change
 
 ```
 console.log('I am a log');
-
 ```
 to
 
 ```
 logger.log('I am a log');
-
 ```
 
 It has different methods to log the out:
@@ -79,17 +77,19 @@ const data = {
 
 | logger.log('I am a log')      | logger.log(null, data, true)   | logger.log('User data is: ', data, true) |
 | ----------------------------- | ------------------------------ | ---------------------------------------- |
-| ![](https://imgur.com/2Y3r6OX.png) | ![](https://imgur.com/aoq9EiH.png)  | ![](https://imgur.com/z6QHPn8.png)            |
+| ![](https://imgur.com/7TndXRG) | ![](https://imgur.com/qWcnjxT)  | ![](https://imgur.com/fPhsIT1)            |
 
 
 ## 2. logger.error
 
 Usage:
-- **logger.error(header, text)**
+- **logger.error(header, text, expandJson)**
 
     **header:** The header to be shown as heading of the output
 
     **text:** The output to be shown
+
+    **expandJson:** If the output to be shown is ```JSON object```, the ```JSON object``` would be expanded by using ```JSON.stringify().replace()``` method
     
 - **logger.error(text)**
 
@@ -98,9 +98,9 @@ Usage:
     If only ```text``` is provided, the default heading would be ```"ERROR"```
 
 
-| logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  |
-| ------------------------------------------   | ------------------------------ |
-| ![](https://imgur.com/dkqtWIL.png)              | ![](https://imgur.com/yeBHNtd.png)  |
+| logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  | logger.error(data, null, true)  |
+| ------------------------------------------   | ------------------------------ | ------------------------------ |
+| ![](https://imgur.com/NmqUr8N)               | ![](https://imgur.com/W38WqCJ) | ![](https://imgur.com/j9R6naU) |
 
 
 ## 3. logger.apiError
@@ -140,9 +140,9 @@ Here I have passed the incorrect url ``https://jsonplaceholder.typicode.com/post
 
 The error will be something like as shown in the 3rd column image below:
 
-| logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
-| ---------------------------------- | ----------------------------------- | ----------------------------------------- |
-| ![](https://imgur.com/WC2Rbo1.png) | ![](https://imgur.com/FQYaoc9.png)  | ![](https://imgur.com/QaED7BI.png)        |
+| logger.apiError(error)             | logger.apiError('add post error:', error) |
+| ---------------------------------- | ----------------------------------------- |
+| ![](https://imgur.com/vvFuPvu)     | ![](https://imgur.com/cHQQ0hE)            |
 
 ## 4. logger.data
 
@@ -164,4 +164,4 @@ Usage:
 
 | logger.data('User data is:', data) | logger.data('User data is:', data, true) |   logger.data(data)            |
 | ---------------------------------- | ----------------------------------------- | ------------------------------ |
-| ![](https://imgur.com/m3deCSn.png)     | ![](https://imgur.com/vmoXo1O.png)            | ![](https://imgur.com/tEzMrrN.png) |
+| ![](https://imgur.com/w5eVPW4)     | ![](https://imgur.com/YAzQnIQ)            | ![](https://imgur.com/9NJcqTG) |
