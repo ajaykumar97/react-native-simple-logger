@@ -1,3 +1,8 @@
+const LOG = 'LOG';
+const DATA = 'DATA';
+const ERROR = 'ERROR';
+const API_ERROR = 'API ERROR';
+
 export function log(header, text, expandJson) {
   if (!__DEV__) {
     //to disable log in production mode
@@ -8,7 +13,7 @@ export function log(header, text, expandJson) {
   try {
     if (!text) {
       text = header;
-      header = 'LOG';
+      header = LOG;
     }
 
     if (expandJson) {
@@ -38,7 +43,7 @@ export function data(header, text, noJsonExpand) {
   try {
     if (!text) {
       text = header;
-      header = 'DATA';
+      header = DATA;
     }
 
     if (noJsonExpand) {
@@ -67,7 +72,7 @@ export function error(header, err, expandJson) {
   if (!err) {
     //single argument is passed;
     err = header;
-    header = 'ERROR';
+    header = ERROR;
   }
 
   console.log('\n');
@@ -106,7 +111,7 @@ export function apiError(header, err) {
   if (!err) {
     //single argument is passed;
     err = header;
-    header = 'API ERROR';
+    header = API_ERROR;
   }
 
   console.log(`%c ${header} `, 'background:red;color:#FFFFFF');
