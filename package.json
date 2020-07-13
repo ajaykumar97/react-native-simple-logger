@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-logger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a simple logger for React-Native to log things more clearly using colored logs",
   "main": "index.js",
   "scripts": {
