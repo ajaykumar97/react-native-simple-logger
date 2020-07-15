@@ -75,12 +75,9 @@ const data = {
 
     The default value for ```expandJson``` is ```false```
 
-
-
 | logger.log('I am a log')      | logger.log(null, data, true)   | logger.log('User data is: ', data, true) |
 | ----------------------------- | ------------------------------ | ---------------------------------------- |
-| ![](https://imgur.com/2Y3r6OX.png) | ![](https://imgur.com/aoq9EiH.png)  | ![](https://imgur.com/z6QHPn8.png)            |
-
+| ![logger.log('I am a log')](https://user-images.githubusercontent.com/38132295/87564992-b0d4d900-c6de-11ea-9511-545a8c3e92c0.png) | ![logger.log(null, data, true)](https://user-images.githubusercontent.com/38132295/87565122-db269680-c6de-11ea-9f12-b003c0201188.png) | ![logger.log('User data is: ', data, true)](https://user-images.githubusercontent.com/38132295/87565219-fc878280-c6de-11ea-94c0-ba5c857a5ddf.png) |
 
 ## 2. logger.error
 
@@ -98,9 +95,9 @@ Usage:
     If only ```text``` is provided, the default heading would be ```"ERROR"```
 
 
-| logger.error('error is: ', 'I am an error')  | logger.error('I am an error')  |
-| ------------------------------------------   | ------------------------------ |
-| ![](https://imgur.com/dkqtWIL.png)              | ![](https://imgur.com/yeBHNtd.png)  |
+| logger.error('error is: ', 'I am an error') | logger.error('I am an error')  | logger.error(data, null, true) |
+| ------------------------------------------  | ------------------------------ | ------------------------------ |
+| ![logger.error('error is: ', 'I am an error')](https://user-images.githubusercontent.com/38132295/87570806-c8b05b00-c6e6-11ea-9767-e34a008eea96.png) | ![logger.error('I am an error')](https://user-images.githubusercontent.com/38132295/87570851-da91fe00-c6e6-11ea-8178-bd0b4b04a73c.png) | ![logger.error(data, null, true)](https://user-images.githubusercontent.com/38132295/87572607-6d339c80-c6e9-11ea-91c3-c1fbd2b76de4.png) |
 
 
 ## 3. logger.apiError
@@ -140,9 +137,9 @@ Here I have passed the incorrect url ``https://jsonplaceholder.typicode.com/post
 
 The error will be something like as shown in the 3rd column image below:
 
-| logger.apiError(error)             |     logger.apiError(error)          | logger.apiError('add post error:', error) |
-| ---------------------------------- | ----------------------------------- | ----------------------------------------- |
-| ![](https://imgur.com/WC2Rbo1.png) | ![](https://imgur.com/FQYaoc9.png)  | ![](https://imgur.com/QaED7BI.png)        |
+| logger.apiError(error)             | logger.apiError('add post error:', error) |
+| ---------------------------------- | ----------------------------------------- |
+| ![logger.apiError(error)](https://user-images.githubusercontent.com/38132295/87573135-25614500-c6ea-11ea-9601-a494f93be171.png) | ![logger.apiError('add post error:', error)](https://user-images.githubusercontent.com/38132295/87573303-56417a00-c6ea-11ea-995c-86fb099bf81a.png) |
 
 ## 4. logger.data
 
@@ -162,6 +159,10 @@ Usage:
     If only ```"text"``` is provided, the default heading would be "DATA"
     The default value for ```noJsonExpand``` is ```false``` i.e. the output would be expanded
 
-| logger.data('User data is:', data) | logger.data('User data is:', data, true) |   logger.data(data)            |
+| logger.data('User data is:', data) | logger.data('User data is:', data, true)  |   logger.data(data)            |
 | ---------------------------------- | ----------------------------------------- | ------------------------------ |
-| ![](https://imgur.com/m3deCSn.png)     | ![](https://imgur.com/vmoXo1O.png)            | ![](https://imgur.com/tEzMrrN.png) |
+| ![logger.data('User data is:', data)](https://user-images.githubusercontent.com/38132295/87573412-7ffaa100-c6ea-11ea-8fd3-51979129f04c.png) | ![logger.data('User data is:', data, true)](https://user-images.githubusercontent.com/38132295/87573521-a7516e00-c6ea-11ea-9657-9b8afd7a5658.png) | ![logger.data(data)](https://user-images.githubusercontent.com/38132295/87575859-2c8a5200-c6ee-11ea-8e42-20cac0d50558.png) |
+
+## License
+
+[MIT](LICENSE)
